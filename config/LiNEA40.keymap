@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -158,7 +158,7 @@
 &trans  &kp C_VOLUME_DOWN  &kp F8  &kp C_VOLUME_UP  &trans                             &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
 &trans  &kp F14            &trans  &kp F15          &trans                             &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
 &trans  &trans             &trans  &trans           &trans                             &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL
-&trans  &trans             &trans  &trans           &trans  &trans    &kp KP_ASTERISK  &kp KP_SLASH                      &trans           &trans           &trans
+&trans  &trans             &trans  &trans           &kp F8  &trans    &kp KP_ASTERISK  &kp KP_SLASH                      &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -177,7 +177,7 @@
             bindings = <
 &trans  &kp LG(LA(LEFT_ARROW))  &kp UP    &kp LG(LA(RIGHT))  &trans                      &kp DOLLAR     &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &trans  &kp LEFT                &kp DOWN  &kp RIGHT          &trans                      &kp AMPERSAND  &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &lt 2 PLUS
-&trans  &kp LG(LC(LEFT))        &trans    &kp LG(LC(RIGHT))  &trans                      &kp N          &kp M            &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL
+&trans  &kp LG(LC(LEFT))        &trans    &kp LG(LC(RIGHT))  &trans                      &trans         &trans           &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL
 &trans  &trans                  &trans    &trans             &trans  &trans    &kp BSPC  &kp RET                         &trans                &trans                 &kp LG(LS(NUMBER_4))
             >;
 
