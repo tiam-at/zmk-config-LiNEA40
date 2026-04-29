@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -175,7 +175,7 @@
         FUNCTION {
             bindings = <
 &trans  &kp LA(LGUI)  &kp UP    &kp LA(LGUI)  &trans                      &kp DOLLAR     &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&trans  &kp LEFT      &kp DOWN  &kp RIGHT     &trans                      &kp AMPERSAND  &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS
+&trans  &kp LEFT      &kp DOWN  &kp RIGHT     &trans                      &kp AMPERSAND  &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &lt 2 PLUS
 &trans  &trans        &trans    &trans        &trans                      &kp N          &kp M            &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL
 &trans  &trans        &trans    &trans        &trans  &trans    &kp BSPC  &kp RET                         &kp A                 &kp B                  &kp A
             >;
