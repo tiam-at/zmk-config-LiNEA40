@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -155,8 +155,8 @@
         SCROLL {
             bindings = <
 &trans  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
-&trans  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&trans  &kp PAGE_DOWN           &trans        &kp PAGE_UP              &trans                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER
+&trans  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
+&trans  &kp PAGE_DOWN           &trans        &kp PAGE_UP              &trans                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL
 &trans  &trans                  &trans        &trans                   &trans  &trans    &trans  &kp NUMBER_0                      &kp NUMBER_0     &kp DOT          &kp QUESTION
             >;
 
@@ -168,7 +168,7 @@
 &trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
 &trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                       &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
 &kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                       &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans    &trans                  &trans        &trans                   &trans  &trans    &kp ENTER  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp QUESTION
+&trans    &trans                  &trans        &trans                   &trans  &trans    &kp ENTER  &kp NUMBER_0                   &trans        &trans        &trans
             >;
         };
 
@@ -177,7 +177,7 @@
 &trans  &kp LA(LGUI)  &kp UP    &kp LA(LGUI)  &trans                      &kp DOLLAR     &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &trans  &kp LEFT      &kp DOWN  &kp RIGHT     &trans                      &kp AMPERSAND  &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &lt 2 PLUS
 &trans  &trans        &trans    &trans        &trans                      &kp N          &kp M            &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL
-&trans  &trans        &trans    &trans        &trans  &trans    &kp BSPC  &kp RET                         &kp A                 &kp B                  &kp A
+&trans  &trans        &trans    &trans        &trans  &trans    &kp BSPC  &kp RET                         &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
