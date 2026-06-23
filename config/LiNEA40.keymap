@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -125,12 +125,21 @@
         default_layer {
             bindings = <
 &mt LEFT_CONTROL Q  &kp W           &kp E             &kp R    &kp T                                &kp Y      &kp U  &kp I      &kp O    &kp P
-&mt LEFT_SHIFT A    &kp S           &lt 1 D           &lt 5 F  &kp G                                &kp H      &kp J  &kp K      &lt 5 L  &lt 4 SEMICOLON
+&mt LEFT_SHIFT A    &kp S           &lt 2 D           &lt 5 F  &kp G                                &kp H      &kp J  &kp K      &lt 5 L  &lt 4 SEMICOLON
 &mt LEFT_SHIFT Z    &kp X           &kp C             &kp V    &kp B                                &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_COMMAND    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp INS  &kp SPACE  &kp TAB    &kp BACKSPACE  &kp ENTER         &trans     &kp A    &lt 6 A
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+        };
+
+        DUMMY2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+            >;
         };
 
         NO_ARROW {
@@ -162,15 +171,6 @@
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
-        };
-
-        dami {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
-            >;
         };
 
         SYMBOL {
