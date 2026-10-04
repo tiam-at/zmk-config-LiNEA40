@@ -113,7 +113,11 @@ layers =
         };
     };
 
-    keymap {
+    
+macros {};
+
+behaviors {};
+keymap {
         compatible = "zmk,keymap";
 
         default_layer {
@@ -122,7 +126,7 @@ layers =
 &mt LEFT_SHIFT A    &kp S           &lt 2 D           &lt 5 F  &kp G                                &kp H      &kp J  &kp K      &lt 5 L  &lt 4 SEMICOLON
 &mt LEFT_SHIFT Z    &kp X           &kp C             &kp V    &kp B                                &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_COMMAND    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp INS  &kp SPACE  &kp TAB    &kp BACKSPACE  &kp ENTER         &trans     &kp A    &lt 6 A
-            >;
+>;
 
             sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
@@ -133,7 +137,7 @@ layers =
 &trans            &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans            &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
-            >;
+>;
         };
 
         NO_ARROW {
@@ -141,8 +145,8 @@ layers =
 &trans  &kp C_VOLUME_DOWN  &kp F8  &kp C_VOLUME_UP  &trans                             &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &trans  &kp F14            &trans  &kp F15          &trans                             &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
 &trans  &trans             &trans  &trans           &trans                             &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans  &trans             &trans  &trans           &kp F8  &trans    &kp KP_ASTERISK  &kp KP_SLASH                &trans        &trans        &kp NUMBER_1
-            >;
+&trans  &trans             &trans  &trans           &kp F8  &trans    &kp KP_ASTERISK  &kp KP_SLASH                &trans        &trans        &kp D
+>;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
@@ -153,7 +157,7 @@ layers =
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
-            >;
+>;
         };
 
         MOUSE {
@@ -162,7 +166,7 @@ layers =
 &trans  &trans  &trans  &trans  &trans                    &trans         &mkp MB1  &mkp MB2  &lt 5 C  &trans
 &trans  &trans  &trans  &trans  &trans                    &mkp MB4       &trans    &trans    &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(LC(A))            &trans    &trans   &trans
-            >;
+>;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
@@ -173,7 +177,7 @@ layers =
 &trans  &kp LEFT                &kp DOWN  &kp RIGHT          &trans                              &kp AMPERSAND      &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &lt 4 PLUS
 &trans  &kp LG(LC(LEFT))        &trans    &kp LG(LC(RIGHT))  &trans                              &trans             &trans           &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL
 &trans  &trans                  &trans    &trans             &trans  &trans    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                   &trans                &trans                 &kp LG(LS(NUMBER_4))
-            >;
+>;
 
             sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
         };
@@ -184,7 +188,7 @@ layers =
 &trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
 &trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
 &trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
-            >;
+>;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
