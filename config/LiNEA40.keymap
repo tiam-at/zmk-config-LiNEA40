@@ -147,7 +147,7 @@
 &trans  &kp C_VOLUME_DOWN  &kp F8  &kp C_VOLUME_UP  &trans                             &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &trans  &kp F14            &trans  &kp F15          &trans                             &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
 &trans  &trans             &trans  &trans           &trans                             &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans  &trans             &trans  &trans           &kp F8  &trans    &kp KP_ASTERISK  &kp KP_SLASH                &trans        &trans        &kp D
+&trans  &trans             &trans  &trans           &kp F8  &trans    &kp KP_ASTERISK  &kp KP_SLASH                &trans        &trans        &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
